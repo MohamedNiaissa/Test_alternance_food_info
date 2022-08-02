@@ -18,7 +18,7 @@ render(){
                 </ul>
                 
             </header>
-            <script src = "Produitjs.js"></script>
+            {/* <script src = "Produitjs.js"></script> */}
 
             
         </>
