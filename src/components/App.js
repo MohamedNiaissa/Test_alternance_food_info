@@ -4,6 +4,8 @@ import Header from "./Header";
 import Produits from "./Produits"
 import '../css/App.css'
 import Diapo from "./Diapo";
+import Footer from "./Footer";
+import Main from "./Main";
 function App() {
   
     return(
@@ -11,6 +13,8 @@ function App() {
 
         <Header />
         <Diapo />
+        <Main/>
+        <Footer/>
         {/* <Produits /> */}
         
         
