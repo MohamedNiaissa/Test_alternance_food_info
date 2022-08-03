@@ -2,19 +2,20 @@
 const url = "https://world.openfoodfacts.org?json=true"
 let headers = {};
 
-
 fetch(url, {
     method : "GET",
     mode: 'cors',
     headers: headers
 }).then((response) => {
+    
+
     return response.json().then((data) => {
             let prods = document.querySelector(".Produits");
             console.log(data)
     
             for(let i = 0; i<data.products.length; i++){
                 let divProd = document.createElement('div');
-                divProd.className = "divProd" + i;
+                divProd.className = "divProd";
 
                 let imgProd = document.createElement("img");
                 imgProd.className = "imgProd";
@@ -24,12 +25,31 @@ fetch(url, {
                 nomProd.className = "nomProd";
                 nomProd.innerHTML = data.products[i].brands;
 
+                let btnESP = document.createElement('a');
+                btnESP.className = "ESP";
+                btnESP.innerHTML = "Plus d'informations";
+
                 prods.appendChild(divProd);
                 divProd.appendChild(imgProd);
                 divProd.appendChild(nomProd)
+                divProd.appendChild(btnESP);
+
+
+                btnESP.addEventListener("click",function(){
+                    alert("ici")
+                    localStorage.clear();window.localStorage.clear();
+
+                    localStorage.setItem("nom",data.products[i].brands);
+                    localStorage.setItem("img",data.products[i].image_front_small_url);
+                    localStorage.setItem("categories",data.products[i].categories);
+                    localStorage.setItem("Ancien packaging", data.products[i].packaging_old)
+                    console.log('icinjii')
+                })
+
                 
 
             }
+
 
 
 

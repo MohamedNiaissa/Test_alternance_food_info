@@ -2,12 +2,13 @@
 .mainPart{
     display: flex;
     justify-content: space-around;
+    margin-top: 150px;
 }
 
 .sidebar{
     padding: 20px;
     border: solid black;
-
+    margin-right: 50px;
     width: 300px;
     height: 400px;
 }
@@ -18,15 +19,38 @@
 .rechercheEtProduits{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .barreRecherche{
     display: flex;
     align-items: baseline;
+    margin-bottom: 40px;
 }
 .Produits{
     display: flex;
     flex-wrap: wrap;
+    flex: 0 0 33.333333%;
+
 }
+
+.ESP{
+    padding: 10px;
+    background-color: #F9F24D;
+    color: #000;
+    cursor: pointer;
+}
+
+.divProd{
+    width: 20%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: solid #000;
+    text-align: center;
+    box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+
+}
+
 .chercheProduit{
     height: 30px;
     width: 200px;
