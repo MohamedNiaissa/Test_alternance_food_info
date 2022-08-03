@@ -9,7 +9,6 @@ class Main extends React.Component{
 render(){
     return(
         <>
-        cxfghjklmùlkjhgfd
             <div className="mainPart">
 
                <div className="sidebar">
@@ -29,10 +28,13 @@ render(){
                      </li>
                   </ul>
                </div>
+               <div className="rechercheEtProduits">
+                  <div className="barreRecherche">
+                     <input type= "text" className= "chercheProduit"/>
+                     <a href="#">CHERCHER</a>
+                  </div>
 
-               <div className="barreRecherche">
-                  <input type={Text} className= "chercheProduit"/>
-                  <a href="#">CHERCHER</a>
+                  <div className="Produits"></div>
                </div>
 
             </div>

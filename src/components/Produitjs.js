@@ -2,16 +2,37 @@
 const url = "https://world.openfoodfacts.org?json=true"
 let headers = {};
 
+
 fetch(url, {
     method : "GET",
     mode: 'cors',
     headers: headers
 }).then((response) => {
     return response.json().then((data) => {
-       
-            console.group("Données : ");
-            console.log(data.products)
-            
+            let prods = document.querySelector(".Produits");
+            console.log(data)
+    
+            for(let i = 0; i<data.products.length; i++){
+                let divProd = document.createElement('div');
+                divProd.className = "divProd" + i;
+
+                let imgProd = document.createElement("img");
+                imgProd.className = "imgProd";
+                imgProd.setAttribute("src",data.products[i].image_front_small_url);
+                
+                let nomProd = document.createElement('p');
+                nomProd.className = "nomProd";
+                nomProd.innerHTML = data.products[i].brands;
+
+                prods.appendChild(divProd);
+                divProd.appendChild(imgProd);
+                divProd.appendChild(nomProd)
+                
+
+            }
+
+
+
         })
 })
 

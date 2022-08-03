@@ -7,7 +7,7 @@
 .sidebar{
     padding: 20px;
     border: solid black;
-    color: black;
+
     width: 300px;
     height: 400px;
 }
@@ -15,12 +15,18 @@
 .sidebar > h5{
     font-size: 20px;
 }
-
+.rechercheEtProduits{
+    display: flex;
+    flex-direction: column;
+}
 .barreRecherche{
     display: flex;
     align-items: baseline;
 }
-
+.Produits{
+    display: flex;
+    flex-wrap: wrap;
+}
 .chercheProduit{
     height: 30px;
     width: 200px;
