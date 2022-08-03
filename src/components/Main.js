@@ -13,6 +13,7 @@ render(){
             <div className="mainPart">
 
                <div className="sidebar">
+                  <h5>Trouver par: </h5>
                   <ul>
                      <li>
                         lorem 

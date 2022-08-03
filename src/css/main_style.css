@@ -9,12 +9,30 @@
     border: solid black;
     color: black;
     width: 300px;
+    height: 400px;
+}
+
+.sidebar > h5{
+    font-size: 20px;
 }
 
 .barreRecherche{
     display: flex;
+    align-items: baseline;
 }
 
 .chercheProduit{
-    height: 20px;
+    height: 30px;
+    width: 200px;
+    border: solid #F9F24D;
+    background-color: #F3F3F3;
+}
+
+.barreRecherche > a{
+    text-decoration: none;
+    color: #000;
+    background-color: #F9F24D;
+    padding: 10px;
+
+    font-size: 13px;
 }
