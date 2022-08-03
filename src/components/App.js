@@ -14,12 +14,9 @@ function App() {
         <Header />
         <Diapo />
         <Main/>
-        <Footer/>
+        {/* <Footer/> */}
         {/* <Produits /> */}
         
-        
-          
-
       </>
     )
   

@@ -1,0 +1,20 @@
+
+.mainPart{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sidebar{
+    padding: 20px;
+    border: solid black;
+    color: black;
+    width: 300px;
+}
+
+.barreRecherche{
+    display: flex;
+}
+
+.chercheProduit{
+    height: 20px;
+}

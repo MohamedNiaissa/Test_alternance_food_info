@@ -24,7 +24,7 @@ const Slideshow = () => {
       <div className="slide-container">
         <Zoom scale={0.4}>
           {
-            images.map((each, index) => <img key={index} class = "img_diapo"  src={each} /> )
+            images.map((each, index) => <img key={index} className = "img_diapo"  src={each} /> )
           }
         </Zoom>
       </div>
