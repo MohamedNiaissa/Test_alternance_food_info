@@ -195,6 +195,13 @@ function detailsItem(){
     divDesc.style.width = "500px";
     lorem.style.textAlign = "center";
     lorem.style.padding = "40px";
+
+    divGeneralItem.style.background = "url('vegetables.jpg')";
+    divGeneralItem.style.backgroundSize = "cover";
+    divGeneralItem.style.color = "white";
+    divGeneralItem.style.height = "100vh";
+    divGeneralItem.style.backdropFilter = "grayscale(60%)";
+
 }
  
 
