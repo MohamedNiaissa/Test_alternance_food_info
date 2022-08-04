@@ -23,8 +23,8 @@ render(){
                      <li>
                         lorem
                      </li>
-                     <li>
-                        lorem
+                     <li className="reset">
+                        Réinitialiser
                      </li>
                   </ul>
                </div>

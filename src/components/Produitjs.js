@@ -72,8 +72,8 @@ displayItems(url);
 // let prodUSA = document.querySelector(".prodUSA");
 
 
-async function f() {
-    
+
+async function produitFrance() {
     let promise = new Promise((resolve, reject) => {
         setTimeout(() => {
             let prodFrance = document.querySelector(".prodFrance");
@@ -88,4 +88,36 @@ async function f() {
   
   }
   
-  f();
+  async function produitUSA() {
+    
+    let promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let prodUSA = document.querySelector(".prodUSA");
+            prodUSA.addEventListener('click',function(){
+              url = "https://us.openfoodfacts.org?json=true"
+              displayItems(url)
+          })
+
+      }, 1000)
+    });
+  
+  
+  }
+
+ async function reset(){
+    let promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let reset = document.querySelector(".reset");
+            reset.addEventListener('click',function(){
+              url = "https://world.openfoodfacts.org?json=true"
+              displayItems(url)
+          })
+
+      }, 1000)
+    });
+
+ }
+
+  produitFrance();
+  produitUSA();
+  reset();
