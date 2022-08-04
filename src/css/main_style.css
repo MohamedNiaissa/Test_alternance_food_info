@@ -7,9 +7,10 @@
 
 .sidebar{
     padding: 20px;
+    padding-right: 70px;
     border: solid black;
     margin-right: 50px;
-    width: 300px;
+    width: 400px;
     height: 400px;
 }
 

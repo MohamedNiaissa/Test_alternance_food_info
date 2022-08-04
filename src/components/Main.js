@@ -14,11 +14,11 @@ render(){
                <div className="sidebar">
                   <h5>Trouver par: </h5>
                   <ul>
-                     <li>
-                        lorem 
+                     <li className="prodFrance">
+                        Produits vendu en France
                      </li>
-                     <li>
-                        lorem
+                     <li className="prodUSA">
+                        Produits vendu aux États-Unis
                      </li>
                      <li>
                         lorem
