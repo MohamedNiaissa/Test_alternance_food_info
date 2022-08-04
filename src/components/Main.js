@@ -20,9 +20,7 @@ render(){
                      <li className="prodUSA">
                         Produits vendu aux États-Unis
                      </li>
-                     <li>
-                        lorem
-                     </li>
+              
                      <li className="reset">
                         Réinitialiser
                      </li>
